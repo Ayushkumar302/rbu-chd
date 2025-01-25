@@ -1,0 +1,145 @@
+.about-bnr {
+  width: 100%;
+  background-position: center center !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  min-height: 500px;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.contact-bg {
+  background: url(https://rburopar.devildev.in/wp-content/uploads/2024/12/1.png);
+}
+.about-bnr h2 {
+  color: #fff;
+  font-size: 44px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  position: relative;
+  z-index: 980;
+}
+.about-bnr h2:after {
+  content: "";
+  width: 200px;
+  height: 3px;
+  background: #fff;
+  position: absolute;
+  bottom: -13px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+}
+.about-bnr:after {
+  content: "";
+  width: 100%;
+  position: absolute;
+  background: #00000078;
+  top: 0;
+  left: 0;
+  height: 100%;
+  z-index: 1;
+}
+/* Contact Section Css */
+section.con-details {
+  background: #f3f6fb;
+}
+.padding_80 {
+  padding: 60px 0px;
+}
+section.con-details h2 {
+  font-size: 44px;
+  font-weight: bold;
+  text-transform: capitalize;
+  margin-bottom: 30px;
+  position: relative;
+  text-align: center;
+}
+section.con-details h2:after {
+  content: "";
+  width: 150px;
+  height: 4px;
+  background: #000000;
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.inr-dtl {
+  text-align: center;
+  background: #fff;
+  padding: 16px;
+  border-radius: 10px;
+  margin: 15px 0px;
+  min-height: 180px;
+  box-shadow: 0px 0px 10px -3px #ccc;
+  transition: 0.5s;
+}
+.inr-dtl i {
+  width: 50px;
+  height: 50px;
+  background: #d12023;
+  color: #fff;
+  font-size: 20px;
+  line-height: 50px;
+  border-radius: 7px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.inr-dtl h4 {
+  font-size: 22px;
+  font-weight: bold;
+  color: #000000;
+}
+.inr-dtl p {
+  word-break: break-all;
+}
+.contact-form {
+  padding-left: 30px;
+}
+.contact-form h4 {
+  font-size: 26px;
+  font-weight: bold;
+  margin-bottom: 0px;
+}
+.contact-form p {
+  color: #2b2a29;
+  font-weight: 300;
+}
+.wpcf7 .screen-reader-response {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  word-wrap: normal !important;
+}
+.contact-form form {
+  margin-top: 25px;
+}
+.contact-form form input {
+  width: 100%;
+  padding: 12px;
+  border: 1px #2b2a295c solid;
+  border-radius: 5px;
+  background: #f8f8f8;
+  margin: 10px 0px;
+  font-weight: bold;
+  text-transform: capitalize;
+  font-size: 16px;
+}
+.contact-form form textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px #2b2a295c solid;
+  border-radius: 5px;
+  background: #f8f8f8;
+  margin: 10px 0px;
+  font-weight: bold;
+  text-transform: capitalize;
+  font-size: 16px;
+}

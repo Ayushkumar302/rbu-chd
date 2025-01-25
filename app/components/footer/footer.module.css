@@ -1,0 +1,49 @@
+.padding_80 {
+  padding: 60px 0px;
+  background: #111;
+  color: #fff;
+}
+.footer_title {
+  text-transform: capitalize;
+  margin-bottom: 15px;
+  font-weight: 600;
+  font-family: "Inter";
+  font-size: 18px;
+}
+.ul_style {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.info_box_wrap {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  margin: 10px 0px;
+  text-transform: uppercase;
+}
+.info_box_wrap_a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 12px;
+  text-transform: capitalize;
+}
+.info_box_wrap_i {
+  font-size: 14px;
+}
+.info_box_wrap_span {
+  color: #ffb800;
+  font-size: 14px;
+}
+.logo {
+  max-width: 230px;
+}
+/* Copyright start */
+.footer_copyright {
+  background: #fbb03b;
+  color: #000000;
+  text-align: center;
+  padding: 10px 0px;
+  font-size: 13px;
+  font-family: "Poppins";
+}
