@@ -11,8 +11,6 @@ export const metadata = {
 export default function ContactPage() {
   return (
     <>
-      <TopBar /> <br />
-      <br />
       <main className="container py-5 mt-5">
         <div className="row justify-content-center">
           <div className="col-md-6 text-center">

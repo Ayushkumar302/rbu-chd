@@ -1,4 +1,6 @@
 import ClientBootstrap from "./client-bootstrap";
+import Footer from "./components/footer/footer";
+import TopBar from "./components/topBar/TopBar";
 
 export const metadata = {
   title: "Create Next App",
@@ -9,7 +11,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
+        <TopBar />
         <ClientBootstrap>{children}</ClientBootstrap>
+        <Footer />
       </body>
     </html>
   );
