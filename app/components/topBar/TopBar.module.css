@@ -107,6 +107,21 @@
  }
 
 
+.dropdown_menu_program{
+width: max-content;
+  min-width: 1000px;
+  max-width: 1200px;
+  max-height: 800px;
+  position: absolute;
+  margin: 0 7px;
+  border-radius: 15px;
+  left: 50%; 
+  transform: translateX(-30%); 
+  padding: 13px !important;
+  overflow: hidden;
+}
+
+
  .programHeading {
   color: #091E5F;
   font-size: 16px;
@@ -118,7 +133,7 @@
   line-height: 16px;
   padding-bottom: 10px;
   padding-top: 7px;
-  padding-left: 2px;
+  padding-left: 4px;
   padding-right: 2px;
   text-align: start;
   font-weight: 700;
@@ -130,32 +145,33 @@
 .programHeading::after {
   content: "";
   display: block;
-  width: 100%; /* Full width of the heading */
-  height: 1px; /* Thin bottom line width */
-  background-color: #d7d7d7; /* Bottom line color */
+  width: 100%;
+  height: 0.1px; 
+  background-color: #d7d7d7; 
   position: absolute;
-  left: 0; /* Align it to the left */
-  bottom: 0; /* Place it at the bottom */
+  left: 0; 
+  bottom: 0; 
 }
 
 .programHeading::before {
   content: "";
   display: block;
-  width: 0.5px; /* Thin right-side line width */
-  background-color: #d7d7d7; /* Right side line color */
+  width: 1px; 
+  height: 100px;
+  background-color: #d7d7d7; 
   position: absolute;
-  right: 0; /* Position it on the right side */
-  top: 0; /* Start at the top of the heading */
-  bottom: 0; /* Stretch it to the bottom of the heading */
+  right: 0; 
+  top: 0; 
+  bottom: 0;
 }
 
 
 .programLink {
   background: #fff;
-  padding: 7px 6px;
+  padding: 7px 16px; /* Increase horizontal padding */
+  
   display: block;
-  width: 100%;
-  /* font-family: 'Inter'; */
+  width: 100%; /* Full width */
   font-weight: 500;
   font-size: 12px;
   color: #091E5F;
@@ -169,7 +185,6 @@
   word-wrap: break-word;
   font-family: 'Inter Variable', sans-serif;
   text-transform: uppercase;
-
 }
 
 .programLink::after {
@@ -186,12 +201,18 @@
 .programLink::before {
   content: "";
   display: block;
-  width: 0.9px; /* Thin right-side line width */
+  width: 1px; /* Thin right-side line width */
+  height: 100%;
   background-color: #d7d7d7; /* Right side line color */
   position: absolute;
   right: 0; /* Position it on the right side */
   top: 0; /* Stretch it from the top of the link */
   bottom: 0; /* Stretch it to the bottom of the link */
+}
+
+.ProgramLeftSideLine{
+  border-left: 0.5px solid #d7d7d7;
+  border-collapse: collapse;
 }
 
 
@@ -214,7 +235,7 @@
 .rankBox {
   position: relative;
   width: 300px;
-  height: 130px;
+  height: 140px;
   background: white;
   color: initial;
   overflow: hidden;
@@ -248,7 +269,7 @@
 }
 
 .rankBox h4 {
-  color: red;
+  color:#D12023;
   margin: 0;
   transition: color 0.3s ease-in-out;
   font-family: "Poppins";
@@ -265,6 +286,7 @@
 
 .rankBox .icon img {
   transition: filter 0.3s ease-in-out;
+  padding-bottom: 10px;
 }
 
 .rankBox:hover .icon img {
@@ -312,7 +334,7 @@
 .rankBox h4 {
   color: #D12023;
   transition: color 0.3s ease-in-out;
-  font-family: "Poppins";
+  font-family: 'Inter Variable', sans-serif;
   font-weight: 700;
   
   
@@ -321,6 +343,8 @@
 .rankBox p {
   color: #091E5F;
   transition: color 0.3s ease-in-out;
+  font-family: 'Inter Variable', sans-serif;
+  line-height: 16px;
 }
 
 .rankBox:hover {
@@ -340,12 +364,15 @@
 .manuTopPic {
   position: relative; 
   overflow: hidden; 
-  margin-bottom: 10px
+  margin-bottom: 10px;
+  height: 200px;
 }
 
 .cong {
   width: 100%; 
+  height: 100%;
   border-radius: 8px; 
+  object-fit: cover;
 }
 
 .manuTopTxt {
@@ -406,11 +433,13 @@
 
 
 .scrollableContainer {
-  max-height: 360px; 
+  max-height: 390px; 
   overflow-y: auto; 
   overflow-x: hidden; 
   scrollbar-width: thin; 
-  scrollbar-color: #091E5F #f1f1f1; 
+  scrollbar-color: #091E5F   #f1f1f1; 
+  background-color: #fff;
+  border-radius: 15px 0px 0px 15px ;
 }
 
 .scrollableContainer::-webkit-scrollbar {
@@ -434,7 +463,8 @@
   display: flex;
   flex-direction: column;
   gap: 10px;
-  width: 190px;
+  width: 200px;
+
 }
 
 .instAplyBtnTwo {
@@ -453,6 +483,7 @@
   transition: all 0.3s ease-in-out;
   font-family: 'Inter Variable', sans-serif;
   font-weight: 800;
+  font-family: 'Inter Variable', sans-serif;
 
 }
 
@@ -469,20 +500,32 @@
   padding: 20px;
   text-align: center;
   border-radius: 10px; 
+  font-family: 'Anton', sans-serif;;
+  text-transform: uppercase;
+
 }
 
-.allCampus h3 {
+.allCampus h3  {
   margin-bottom: 20px;
-  text-align: start;  
+  text-align: start; 
+  font-weight: 900;
+  font-size: 200px;
+  line-height: 18px;
+   
 }
 
 .visited {
-  font-weight: bold;
+  font-weight: 900;
+  font-size: 12px;
 }
 
 .places {
   font-weight: bold;
   color: #FFD700;  
+  font-weight: 900;
+  font-size: 21px;
+  line-height: 20px;
+  text-align: start;
 }
 
 .allCampus img {
@@ -493,12 +536,18 @@
 }
 
 .bottomCam {
+  color: #FFD700;
   position: absolute;
   bottom: 10px;
   left: 50%;
   transform: translateX(-50%);
-  font-size: 1.2rem;
-  font-weight: bold;
+  font-size: 1.8rem;
+  font-weight: 900;
+  line-height: 23px;
+
+}
+.bottomCam label{
+  color: white;
 }
 
 .bottomCam label {
@@ -559,7 +608,7 @@ font-family: 'Inter Variable', sans-serif;
   color: white;
   padding: 10px;
   margin-right: 0px;
-  border-radius: 10px 10px 10px 10px;
+  border-radius: 10px 0px 0px 10px;
   
   
 }
@@ -592,7 +641,7 @@ font-family: 'Inter Variable', sans-serif;
   background-size: cover;
   background-position: center;
   border-radius: 0px 15px 15px 0px;
-  margin-right: 5px;
+  margin-left: 12px;
   
 }
 
@@ -636,7 +685,7 @@ font-family: 'Inter Variable', sans-serif;
   display: flex; /* Enables flexbox */
   align-items: flex-end; /* Aligns the text to the bottom */
   justify-content: center; /* Centers the text horizontally */
-  padding: 20px; /* Adjust padding as desired */
+  padding: 20px; 
   text-align: center;
   z-index: 1;
   border-radius: 0px 0px 15px 0px;
@@ -665,7 +714,7 @@ font-family: 'Inter Variable', sans-serif;
 }
 
 .customBorderRadiusTwo{
-  background-color: white;
+  /* background-color: white; */
  border-radius: 10px 0px 0px 10px; 
 
 }

@@ -24,7 +24,10 @@ export default function TopBar() {
         <div className="container-fluid">
           <div className="row">
             <div className="col-md-11 offset-lg-1 px-md-5 px-lg-0 px-0 top_call_box">
-              <div className="row align-items-center mobile-topbar">
+              <div className="row align-items-center  mobile-topbar"
+             style={{ fontFamily: 'Inter Variable, sans-serif' }}
+
+              >
                 <div className="col-lg-4 col-xl-2">
                   <div className="d-flex align-items-center top_call mobs">
                     <a className="navbar-brand" href="https://rbuchd.in">
@@ -216,7 +219,10 @@ export default function TopBar() {
                   className="collapse navbar-collapse"
                   id="navbarSupportedContent"
                 >
-                  <ul className="navbar-nav m-auto ">
+                  <ul className="navbar-nav m-auto  "
+                  style={{ fontFamily: 'Inter Variable, sans-serif' }}
+                  
+                  >
                     <li className="nav-item">
                       <Link className="nav-link" href="/">
                         Home
@@ -845,12 +851,12 @@ export default function TopBar() {
                         Program
                       </a>
                       <div
-                        className={`${styles.dropdown_menu} mt-4 dropdown-menu megamenu institute_megamenu  bg-light bg-opacity-50`}
+                        className={`${styles.dropdown_menu_program} mt-4 dropdown-menu megamenu institute_megamenu  bg-light bg-opacity-50`}
                         // className="dropdown-menu megamenu institute_megamenu"
                         aria-labelledby="navbarDropdown"
                       >
                         <div className="institute-nav-bg  ">
-                          <div className="row bg-white rounded">
+                          <div className="row ">
                             <div className="col-md-10">
                               <div className={`${styles.scrollableContainer} inst-manu-list `}>
                                 <div className="row">
@@ -1396,7 +1402,7 @@ export default function TopBar() {
                                         </li>
                                         <li>
                                           <a href="#"
-                                           className={`${styles.programLink}`}
+                                           className={`${styles.programLink} ${styles.ProgramLeftSideLine}`}
                                           >
                                             {" "}
                                             <i
@@ -1408,7 +1414,7 @@ export default function TopBar() {
                                         </li>
                                         <li>
                                           <a href="#"
-                                           className={`${styles.programLink}`}
+                                           className={`${styles.programLink} ${styles.ProgramLeftSideLine}`}
                                           >
                                             {" "}
                                             <i
@@ -1421,7 +1427,7 @@ export default function TopBar() {
                                         </li>
                                         <li>
                                           <a href="#"
-                                           className={`${styles.programLink}`}
+                                           className={`${styles.programLink} ${styles.ProgramLeftSideLine}`}
                                           >
                                             {" "}
                                             <i
@@ -1433,7 +1439,7 @@ export default function TopBar() {
                                         </li>
                                         <li>
                                           <a href="#"
-                                           className={`${styles.programLink}`}
+                                           className={`${styles.programLink} ${styles.ProgramLeftSideLine}`}
                                           >
                                             {" "}
                                             <i
@@ -1445,7 +1451,7 @@ export default function TopBar() {
                                         </li>
                                         <li>
                                           <a href="#"
-                                           className={`${styles.programLink}`}
+                                           className={`${styles.programLink} ${styles.ProgramLeftSideLine}`}
                                           >
                                             {" "}
                                             <i
@@ -1465,7 +1471,7 @@ export default function TopBar() {
                                         {" "}
                                         <h2>
                                           <a href="#"
-                                          className={`${styles.programHeading} mr-4`}
+                                          className={`${styles.programHeading}`}
                                           
                                           >
                                             Industry Oriented Courses{" "}
@@ -1655,7 +1661,7 @@ export default function TopBar() {
                             <div className="col-md-2 ps-0">
                               <div className={`${styles.allCampus}`}>
                                 <h3 className="fs-6" >
-                                  <span className={`${styles.visited} fs-6`}>Visited </span><br />
+                                  <span className={`${styles.visited} `}>Visited </span><br />
                                   Rayat-Bahra <br /> Group{" "}
                                   <span className={`${styles.places}`}>for Placements</span>
                                 </h3>
@@ -1699,10 +1705,10 @@ export default function TopBar() {
                         aria-labelledby="navbarDropdown"
                       >
                         <div className="inr-lights-manu pl-4">
-                          <div className="row px-2">
-                            <div className={`${styles.customBorderRadius} col-lg-7 col-md-7 col-sm-7 col-12 pe-0 `}>
+                          <div className="row px-3">
+                            <div className={`${styles.customBorderRadius} bg-white col-lg-7 col-md-7 col-sm-7 col-12 pe-0 `}>
                               <div className="inr-about-megas lights">
-                                <div className="row px-4 py-1">
+                                <div className="row ">
                                   <div className="col-md-6">
                                     <div className="top-hdg">
                                       {" "}
