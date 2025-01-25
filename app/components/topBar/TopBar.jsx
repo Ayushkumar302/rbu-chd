@@ -483,7 +483,7 @@ export default function TopBar() {
                         Our Institutions
                       </a>
                       <div
-                        className={`${styles.dropdown_menu} dropdown-menu about-megamanu mt-4 bg-light bg-opacity-50 px-4`}
+                        className={`${styles.dropdown_menu_institution} dropdown-menu about-megamanu mt-4 bg-light bg-opacity-50 px-4`}
                         // className="dropdown-menu about-megamanu"
                         aria-labelledby="navbarDropdown"
                       >

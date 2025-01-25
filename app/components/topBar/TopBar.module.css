@@ -71,6 +71,20 @@
   transition: background-color 0.3s ease;
 }
 
+
+.dropdown_menu_institution{
+  width: max-content;
+  min-width: 900px;
+  max-width: 950px;
+  max-height: 800px;
+  position: absolute;
+  margin: 0 7px;
+  border-radius: 15px;
+  left: 50%; 
+  transform: translateX(-15%); 
+  padding: 13px !important;
+  overflow: hidden;
+}
 .ourInstitutionHeading a{
   text-decoration: none;
   color: #091E5F;
@@ -563,7 +577,7 @@ width: max-content;
   margin: 0 7px;
   border-radius: 15px;
   left: 50%; 
-  transform: translateX(-50%); 
+  transform: translateX(-40%); 
   padding: 13px !important;
   overflow: hidden;
  
@@ -805,7 +819,7 @@ ul.list_unstyled li a i {
   margin: 0 7px;
   border-radius: 15px;
   left: 50%; 
-  transform: translateX(-50%); 
+  transform: translateX(-65%); 
   padding: 13px !important;
   overflow: hidden;
 }
