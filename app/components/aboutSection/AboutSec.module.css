@@ -1,0 +1,148 @@
+/* AboutSec.module.css */
+
+.aboutSec {
+    padding-top: 150px;
+    padding-bottom: 100px;
+  }
+  
+  .heading {
+    font-weight: 800 !important;
+    text-align: start;
+    font-size: 42px;
+    line-height: 44px;
+    text-transform: uppercase;
+    color: #d12023;
+    font-family: 'poppins';
+    background: linear-gradient(90deg, #1d1863 0%, #de1b21 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    max-width: 100%;
+    word-wrap: break-word;
+  }
+  
+  .description {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #555;
+    font-weight: 500;
+    max-width: 100%;
+    word-wrap: break-word;
+  }
+  
+  /* Image Styles */
+  .image1 {
+    width: 100%; 
+    height: 400px;
+    object-fit: cover;
+    margin-right: 10px;
+  }
+  
+  .image2 {
+    width: 48%;
+    height: 400px; 
+    object-fit: cover;
+  }
+  
+  .notice {
+    background-color: #091e5f;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 10px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center items horizontally */
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+    text-align: center; /* Center-align text content */
+  }
+  
+  .notice_title {
+    background: #091e5f;
+    color: white;
+    padding: 10px;
+    font-weight: 700;
+    flex: 0 0 auto;
+    min-height: 50px;
+    min-width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 10px; /* Add spacing for smaller screens */
+  }
+  
+  .separator {
+    height: 50px;
+    width: 1px;
+    background-color: white;
+    margin: 0 20px;
+  }
+  
+  .icon {
+    background-color: yellow;
+    color: black;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px; /* Add spacing for smaller screens */
+  }
+  
+  .noticeText {
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 0;
+    text-align: center; /* Center-align text */
+  }
+  
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .heading {
+      font-size: 1.8rem; /* Smaller font size for the heading */
+      text-align: center; /* Center the heading */
+      margin: 0 auto; /* Center the heading */
+      max-width: 90%; /* Prevent overflow */
+    }
+  
+    .description {
+      font-size: 1rem; /* Adjust description font size */
+      text-align: center; /* Center the description */
+      margin: 0 auto; /* Center the description */
+      max-width: 90%; /* Prevent overflow */
+    }
+  
+    .image1 {
+      height: 250px; /* Adjust image size */
+    }
+  
+    .image2 {
+      width: 100%;
+      height: 150px;
+      display: none; /* Hide image2 */
+    }
+  
+    .separator, .icon {
+      display: none; /* Hide separator and icon */
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .notice {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .icon {
+      margin-bottom: 10px;
+    }
+  
+    .noticeText {
+      font-size: 0.9rem;
+    }
+  }
+  

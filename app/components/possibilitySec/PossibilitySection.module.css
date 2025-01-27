@@ -1,0 +1,80 @@
+.possibilitySection {
+    background: linear-gradient(to top, #fff, #f3f6fb); /* Section background gradient */
+    padding: 60px 0; /* Adjust padding */
+  }
+  
+  .heading {
+    font-size: 2.5rem;
+    line-height: 1.2;
+    font-weight: 800;
+    text-transform: uppercase;
+    background: linear-gradient(90deg, #1d1863 0%, #de1b21 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 20px;
+  }
+  
+  .description {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #555;
+    max-width: 800px; /* Restrict width */
+    margin: 0 auto; /* Center the text */
+  }
+  
+  .container {
+    max-width: 1140px; /* Limit the container width */
+  }
+  
+  .row {
+    gap: 10px; /* Add spacing between columns */
+  }
+  
+  /* Column-specific Classes */
+  .column1, .column2, .column3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%; /* Ensure the columns take up the full height */
+  }
+  
+  /* Image Types */
+  
+  /* Square images */
+  .squareImg {
+    height: 250px; /* Set fixed height for square */
+    object-fit: cover; /* Ensure aspect ratio is maintained */
+  }
+  
+  /* Vertical images (taller images) */
+  .verticalImg {
+    height: 400px; /* Set height to be larger for vertical images */
+    object-fit: cover; /* Ensure aspect ratio is maintained */
+  }
+  
+  /* Horizontal images (wider images) */
+  .horizontalImg {
+    height: 200px; /* Set height to be smaller for horizontal images */
+    object-fit: cover; /* Ensure aspect ratio is maintained */
+  }
+  
+  /* Image Layout Styling */
+  .img {
+    width: 100%;
+    margin-bottom: 10px; /* Adjust spacing between images */
+  }
+  
+  /* Responsive Column Width */
+  @media (max-width: 768px) {
+    .col-md-4 {
+      flex: 0 0 50%; /* Make columns smaller on smaller screens */
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .col-md-4 {
+      flex: 0 0 100%; /* Stack columns vertically on very small screens */
+    }
+  }
+  

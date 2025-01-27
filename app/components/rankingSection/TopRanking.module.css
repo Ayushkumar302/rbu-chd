@@ -1,0 +1,65 @@
+.topRankingsSection {
+  background-color: #f9f9f9;
+  padding: 60px 0;
+}
+
+.starsImage {
+  width: 50px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.heading {
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  background: linear-gradient(90deg, #1d1863 0%, #de1b21 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.cardContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  justify-content: center;
+}
+
+.card {
+  text-align: center;
+  min-height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  background: #091e5f;
+  color: #fff;
+  padding: 10px;
+  transition: background 0.3s ease-in-out;
+}
+
+.card:hover {
+  background-color: #de1b21;
+}
+.imgOne{
+  width: unset;
+  filter: brightness(0) invert(1); 
+  height: 40px; 
+  object-fit: contain; 
+}
+
+.img {
+  width: unset;
+  filter: brightness(0) invert(1); 
+  height: 60px; 
+  object-fit: contain; 
+}
+
+@media (max-width: 768px) {
+  .card {
+    padding: 10px;
+  }
+}
