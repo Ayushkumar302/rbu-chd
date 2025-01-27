@@ -636,7 +636,7 @@ font-family: 'Inter Variable', sans-serif;
   display: flex; /* Enables flexbox */
   align-items: flex-end; /* Aligns the text to the bottom */
   justify-content: center; /* Centers the text horizontally */
-  padding: 20px; /* Adjust padding as desired */
+  padding: 20px;
   text-align: center;
   z-index: 1;
   border-radius: 0px 0px 15px 0px;
