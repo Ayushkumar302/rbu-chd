@@ -1,7 +1,7 @@
 "use client";
 
 import "bootstrap/dist/css/bootstrap.min.css"; // Import Bootstrap globally
-import "/public/styles/contact.css";
+import "./styles/contact.css";
 import { useState } from "react";
 
 export default function ContactPage() {
