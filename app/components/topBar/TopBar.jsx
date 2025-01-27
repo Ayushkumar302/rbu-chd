@@ -238,8 +238,8 @@ export default function TopBar() {
                         className={`${styles.dropdown_menu} dropdown-menu about-megamanu mt-4 bg-light bg-opacity-50 `}
                         aria-labelledby="navbarDropdown"
                       > 
-                        <div className="row  ">
-                          <div className="col-lg-6 col-md-6 col-sm-6 col-12 bg-white " style={{borderRadius:'15px'}} >
+                        <div className="row  ps-2 ">
+                          <div className="col-lg-6 col-md-6 col-sm-6 col-12 py-2  bg-white " style={{borderRadius:'15px'}} >
                             <div className="inr-about-megas  " >
                               <h3 className={`${styles.AboutHeading}`}>Get to Know Us </h3>
                               <ul className={styles.list_unstyled}>
@@ -369,8 +369,8 @@ export default function TopBar() {
                               </ul>
                             </div>
                           </div>
-                          <div className="col-lg-6 col-md-6 col-sm-6 col-12 ps-0">
-                            <div className="inr-about-manu-txt px-2">
+                          <div className="col-lg-6 col-md-6 col-sm-6 col-12 ps-0 pe-2">
+                            <div className="inr-about-manu-txt ps-4">
                               <div className={`${styles.manuTopPic} rounded mt-2` }>
                                 <img
                                   // className="cong"
@@ -477,7 +477,7 @@ export default function TopBar() {
                         Our Institutions
                       </a>
                       <div
-                        className={`${styles.dropdown_menu} dropdown-menu about-megamanu mt-4 bg-light bg-opacity-50 px-4`}
+                        className={`${styles.dropdown_menu_instituion} dropdown-menu about-megamanu mt-4 bg-light bg-opacity-50 px-4`}
                         // className="dropdown-menu about-megamanu"
                         aria-labelledby="navbarDropdown"
                       >
@@ -845,15 +845,15 @@ export default function TopBar() {
                         Program
                       </a>
                       <div
-                        className={`${styles.dropdown_menu} mt-4 dropdown-menu megamenu institute_megamenu  bg-light bg-opacity-50`}
+                        className={`${styles.dropdown_menu_program} mt-4 dropdown-menu megamenu institute_megamenu  bg-light bg-opacity-50 `}
                         // className="dropdown-menu megamenu institute_megamenu"
                         aria-labelledby="navbarDropdown"
                       >
                         <div className="institute-nav-bg  ">
-                          <div className="row bg-white rounded">
-                            <div className="col-md-10">
+                          <div className="row ">
+                            <div className="col-md-10 ">
                               <div className={`${styles.scrollableContainer} inst-manu-list `}>
-                                <div className="row">
+                                <div className="row bg-white rounded" >
                                   <div className="col-md-2 pe-0">
                                     <div className="inr-cols">
                                       <div className="top-hdg">
@@ -1397,6 +1397,8 @@ export default function TopBar() {
                                         <li>
                                           <a href="#"
                                            className={`${styles.programLink}`}
+                                           style={{borderLeft:'0.5px solid  #d7d7d7' }}
+
                                           >
                                             {" "}
                                             <i
@@ -1409,6 +1411,7 @@ export default function TopBar() {
                                         <li>
                                           <a href="#"
                                            className={`${styles.programLink}`}
+                                           style={{borderLeft:'0.5px solid  #d7d7d7'}}
                                           >
                                             {" "}
                                             <i
@@ -1422,6 +1425,8 @@ export default function TopBar() {
                                         <li>
                                           <a href="#"
                                            className={`${styles.programLink}`}
+                                           style={{borderLeft:'0.5px solid  #d7d7d7'}}
+
                                           >
                                             {" "}
                                             <i
@@ -1434,6 +1439,8 @@ export default function TopBar() {
                                         <li>
                                           <a href="#"
                                            className={`${styles.programLink}`}
+                                           style={{borderLeft:'0.5px solid  #d7d7d7'}}
+
                                           >
                                             {" "}
                                             <i
@@ -1446,6 +1453,8 @@ export default function TopBar() {
                                         <li>
                                           <a href="#"
                                            className={`${styles.programLink}`}
+                                           style={{borderLeft:'0.5px solid  #d7d7d7'}}
+
                                           >
                                             {" "}
                                             <i
@@ -1694,7 +1703,7 @@ export default function TopBar() {
                         highlights
                       </a>
                       <div
-                        className={`${styles.highlights} dropdown-menu mt-4 about-megamanu bg-light bg-opacity-50`}
+                        className={`${styles.dropdown_menu_highlights} dropdown-menu mt-4 about-megamanu bg-light bg-opacity-50`}
                         // className="dropdown-menu about-megamanu"
                         aria-labelledby="navbarDropdown"
                       >
@@ -1702,7 +1711,8 @@ export default function TopBar() {
                           <div className="row px-2">
                             <div className={`${styles.customBorderRadius} col-lg-7 col-md-7 col-sm-7 col-12 pe-0 `}>
                               <div className="inr-about-megas lights">
-                                <div className="row px-4 py-1">
+                                <div className="row px-4 bg-white py-1"
+                                style={{borderRadius: "15px 0px 0px  15px "}}>
                                   <div className="col-md-6">
                                     <div className="top-hdg">
                                       {" "}
@@ -2115,7 +2125,7 @@ export default function TopBar() {
                             </div>
 
                             <div className="col-lg-5 col-md-5 col-sm-5 col-12 ps-0">
-                              <div className={`${styles.highlightsPro} `}>
+                              <div className={`${styles.highlightsPro} ms-0`}>
                                 <div className={styles.highPub}>
                                   <p>
                                     Multinational IT Companies set up their
