@@ -1,7 +1,7 @@
 import "@fontsource/inter"; // Import Inter font
 import ClientBootstrap from "./client-bootstrap";
-import Footer from "./components/footer/footer";
-import TopBar from "./components/topBar/TopBar";
+import Footer from "./components/footer/Footer";
+import TopBar from "./components/home/topBar/TopBar";
 import "./styles/fonts.js"; // Adjust path based on your folder structure
 
 export const metadata = {

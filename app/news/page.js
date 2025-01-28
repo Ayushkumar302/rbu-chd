@@ -1,7 +1,7 @@
 // app/page.js
 import Link from "next/link";
 import "bootstrap/dist/css/bootstrap.min.css"; // (Optional) Import if not done globally
-import TopBar from "../components/topBar/TopBar";
+import TopBar from "../components/home/topBar/TopBar";
 
 export const metadata = {
   title: "News and Events",

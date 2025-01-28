@@ -1,0 +1,30 @@
+.cardContent {
+  background-color: #F3F6FB; /* Light background */
+  transition: background-color 0.3s ease, color 0.3s ease;
+  font-family: 'poppins', sans-serif;
+  border: 1px solid #091e5f;
+  padding: 20px;
+  margin: 20px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.cardContent:hover {
+  background-color: #091e5f; 
+  color: #ffffff; /* Text color on hover */
+}
+
+
+
+
+.heading:hover {
+
+  font-weight: 800;
+  color: white; /* Default rank color */
+  transition: color 0.3s ease; /* Smooth transition */
+}
+
+.text {
+  font-size: 1.1rem; /* Adjust font size for additional text */
+  transition: color 0.3s ease; /* Smooth transition for hover */
+}

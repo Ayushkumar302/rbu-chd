@@ -1,0 +1,110 @@
+/* Main Section */
+.empoweringSec {
+  text-align: center;
+  padding: 60px 20px;
+  padding-top: 0px;
+}
+
+.empoweringSec h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  background: linear-gradient(90deg, #091e5f 0%, #de1b21);
+  -webkit-background-clip: text;
+  color: transparent;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+}
+
+.empoweringSec p {
+  font-size: 1.2rem;
+  margin-bottom: 50px;
+  width: 60%;
+  margin: 0 auto;
+}
+
+/* Cards Section */
+.cardContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding-top: 80px;
+}
+
+.cardCustom {
+  width: 200px;
+  height: 200px;
+  background-color: #091e5f;
+  transition: background-color 0.3s ease;
+  border-radius: 10px;
+  position: relative;
+  color: white;
+  text-align: center;
+  padding-top: 50px; /* Added padding to avoid text overlapping with hexagon */
+}
+
+.cardCustom:hover {
+  background-color: #de1b21;
+}
+
+/* Hexagon Header */
+.cardHeader {
+  position: absolute;
+  top: -40px; /* Ensure it's outside of the card */
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: white;
+  width: 80px;
+  height: 80px;
+  clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 26px;
+  color: #091e5f;
+  border: 3px solid brown;
+  z-index: 2; /* Ensures it stays above the card */
+  transition: border 0.3s ease, color 0.3s ease;
+}
+
+.cardHeader:hover {
+  border: 3px solid green;
+  color: red;
+}
+
+/* Card Content */
+.cardContent {
+  padding-top: 10px; /* Adjusted padding to ensure the text doesn't overlap with hexagon */
+}
+
+.cardContent h5 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.cardContent p {
+  font-size: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .cardContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cardCustom {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .empoweringSec h1 {
+    font-size: 2rem;
+  }
+
+  .empoweringSec p {
+    font-size: 1rem;
+  }
+}
