@@ -1,4 +1,5 @@
 import AboutSec from "./components/aboutSection/AboutSec";
+import { AccreditationsSec } from "./components/AccreditationsSec/AccreditationsSec";
 import BannerSection from "./components/bannerSection/BannerSection";
 import PossibilitySection from "./components/possibilitySec/PossibilitySection";
 import TopRankingsSection from "./components/rankingSection/TopRankingSection";
@@ -11,6 +12,7 @@ export default function Home() {
       <PossibilitySection/>
       <UniqueSection/>
       <TopRankingsSection/>
+      <AccreditationsSec/>
     </>
   );
 }
