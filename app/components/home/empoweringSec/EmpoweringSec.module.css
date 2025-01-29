@@ -1,110 +1,80 @@
-/* Main Section */
-.empoweringSec {
-  text-align: center;
-  padding: 60px 20px;
-  padding-top: 0px;
+.student_friendly{
+  padding: 70px;
 }
 
-.empoweringSec h1 {
+.heading h3 {
   font-size: 2.5rem;
-  font-weight: bold;
-  background: linear-gradient(90deg, #091e5f 0%, #de1b21);
-  -webkit-background-clip: text;
-  color: transparent;
-  margin-bottom: 10px;
-  padding-bottom: 10px;
+  font-weight: 700;
+  background: linear-gradient(90deg, #1d1863 0%, #de1b21 100%);
+  /* -webkit-background-clip: text; */
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 1rem;
+  padding-top: 100px;
+  text-transform: uppercase;
+  text-align: center; 
 }
 
-.empoweringSec p {
+.subtext {
   font-size: 1.2rem;
-  margin-bottom: 50px;
-  width: 60%;
+  color: #5f5f5f;
+  line-height: 1.8;
+  max-width: 800px;
   margin: 0 auto;
+  text-align: center; 
 }
-
-/* Cards Section */
-.cardContainer {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 30px;
-  padding-top: 80px;
-}
-
-.cardCustom {
-  width: 200px;
-  height: 200px;
-  background-color: #091e5f;
-  transition: background-color 0.3s ease;
-  border-radius: 10px;
-  position: relative;
-  color: white;
+.friendly_box {
+  background: #091e5f;
   text-align: center;
-  padding-top: 50px; /* Added padding to avoid text overlapping with hexagon */
+  position: relative;
+  padding: 20px;
+  color: #fff;
+  border-radius: 6px;
+  margin-top: 85px;
+  padding-top: 60px;
+  transition: 0.4s;
+  cursor: pointer;
 }
 
-.cardCustom:hover {
-  background-color: #de1b21;
+.friendly_box:hover {
+  background: #d12023;
+  transition: 0.4s;
 }
 
-/* Hexagon Header */
-.cardHeader {
-  position: absolute;
-  top: -40px; /* Ensure it's outside of the card */
-  left: 50%;
-  transform: translateX(-50%);
-  background-color: white;
-  width: 80px;
-  height: 80px;
-  clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: 800;
-  font-size: 26px;
+.friendly_box h4 {
+  font-family: 'Poppins';
+  font-weight: 600;
+  font-size: 24px;
+  text-transform: capitalize;
+  min-height: 57px;
+}
+
+.friendly_box p {
+  font-family: 'Poppins';
+  font-weight: 500;
+}
+
+.friendly_box:hover .pris {
+  /* background-image: url(../images/new/home/engal-gren.png) !important; */
+  color: #d12023;
+}
+
+.pris {
+  width: 88px;
+  height: 88px;
+  background-image: url(../../home/assetsHome/engal.png);
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
   color: #091e5f;
-  border: 3px solid brown;
-  z-index: 2; /* Ensures it stays above the card */
-  transition: border 0.3s ease, color 0.3s ease;
+  line-height: 88px;
+  font-family: 'Poppins';
+  font-weight: 700;
+  font-size: 24px;
+  text-align: center;
+  position: absolute;
+  top: -45px;
+  left: 50%;
+  transform: translate(-50%, -0%);
 }
 
-.cardHeader:hover {
-  border: 3px solid green;
-  color: red;
-}
-
-/* Card Content */
-.cardContent {
-  padding-top: 10px; /* Adjusted padding to ensure the text doesn't overlap with hexagon */
-}
-
-.cardContent h5 {
-  font-size: 1.5rem;
-  font-weight: bold;
-  margin-bottom: 15px;
-}
-
-.cardContent p {
-  font-size: 1rem;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-  .cardContainer {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .cardCustom {
-    width: 100%;
-    max-width: 300px;
-  }
-
-  .empoweringSec h1 {
-    font-size: 2rem;
-  }
-
-  .empoweringSec p {
-    font-size: 1rem;
-  }
-}

@@ -2,6 +2,8 @@ import AboutSec from "./components/home/aboutSection/AboutSec";
 import { AccreditationsSec } from "./components/home/AccreditationsSec/AccreditationsSec";
 import BannerSection from "./components/home/bannerSection/BannerSection";
 import EmpoweringSec from "./components/home/empoweringSec/empoweringSec";
+import ExcellenceSec from "./components/home/excellenceSec/ExcellenceSec";
+import { IntellectualSec } from "./components/home/intellectualSec/IntellectualSec";
 import PossibilitySection from "./components/home/possibilitySec/PossibilitySection";
 import { RankedSec } from "./components/home/rankedSec/rankedSec";
 import TopRankingsSection from "./components/home/rankingSection/TopRankingSection";
@@ -19,6 +21,8 @@ export default function Home() {
       <RankedSec/>
       <RecruitersSec/>
       <EmpoweringSec/>
+      <ExcellenceSec/>
+      <IntellectualSec/>
     </>
   );
 }

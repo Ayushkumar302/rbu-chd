@@ -1,30 +1,42 @@
 .cardContent {
-  background-color: #F3F6FB; /* Light background */
+  background-color: #F3F6FB; 
   transition: background-color 0.3s ease, color 0.3s ease;
   font-family: 'poppins', sans-serif;
   border: 1px solid #091e5f;
-  padding: 20px;
-  margin: 20px;
+  padding: 10px;
+  margin-right: 9px;
   margin-top: 50px;
   margin-bottom: 50px;
 }
 
 .cardContent:hover {
-  background-color: #091e5f; 
-  color: #ffffff; /* Text color on hover */
+  background-color: #091e5f;
+  color: #ffffff; 
 }
 
-
-
-
+.heading {
+  color: #091e5f;
+}
+.heading .rank {
+  font-weight: 900;
+}
+.cardRanked {
+  font-size: 18px;
+  font-weight: 400;
+}
+.cardRanked:hover {
+  color: white;
+}
 .heading:hover {
-
-  font-weight: 800;
-  color: white; /* Default rank color */
-  transition: color 0.3s ease; /* Smooth transition */
+  color: white;
+  transition: color 0.3s ease;
 }
 
 .text {
-  font-size: 1.1rem; /* Adjust font size for additional text */
-  transition: color 0.3s ease; /* Smooth transition for hover */
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
 }
+
+
+
+

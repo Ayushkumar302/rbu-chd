@@ -1,0 +1,49 @@
+.intellectual_sec {
+    background: #f3f6fb;
+}
+
+.intellectual_sec .notice-title {
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.intellectual_sec .notice-content {
+    padding-left: 0;
+}
+
+.label {
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.intellectual_sec h6.text-left {
+    font-size: 24px;
+    color: #1d1863;
+}
+
+.intellectual_right {
+    padding-left: 20px;
+}
+
+.intellectual_right p {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.intellectual_sec .fst_box p {
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.intellectual_sec .scd_box {
+    padding: 0px 60px;
+    text-align: center;
+}
+
+.intellectual_sec .scd_box img {
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 4px 7px 1px 1px #091e5f;
+}
