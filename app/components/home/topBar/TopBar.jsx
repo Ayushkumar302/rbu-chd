@@ -20,7 +20,7 @@ export default function TopBar() {
   }, []);
   return (
     <header className="fixed-top">
-      <div className={`topbar py-2 ${isScrolled ? styles.scrolled : ""}`}>
+      <div className={`topbar py-2 px-0 ${isScrolled ? styles.scrolled : ""}`}>
         <div className="container-fluid">
           <div className="row">
             <div className="col-md-11 offset-lg-1 px-md-5 px-lg-0 px-0 top_call_box">
@@ -106,7 +106,7 @@ export default function TopBar() {
                       </li>
                     </ul>
 
-                    <ul className="d-flex align-items-center justify-content-end text-uppercase m-0 px-4 gap-4 list-unstyled">
+                    <ul className="d-flex align-items-center justify-content-end text-uppercase m-0 px-0 gap-4 list-unstyled">
                       <li className="top_list">Follow Us :</li>
                       <li className="top_list">
                         <a
@@ -151,7 +151,7 @@ export default function TopBar() {
           <div className="row">
             <div className="col-lg-12 p-0">
               <nav
-                className={`navbar navbar-expand-lg navbar-light  px-2 px-md-4 ${styles.menu_area}`}
+                className={`navbar navbar-expand-lg navbar-light  px-0 px-md-0 ${styles.menu_area}`}
               >
                 {/* <div className="nav_collapsed dex">
                   <a className="navbar-brand" href="https://rbuchd.in">

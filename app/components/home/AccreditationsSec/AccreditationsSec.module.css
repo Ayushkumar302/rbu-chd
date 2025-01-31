@@ -1,52 +1,65 @@
-.accreditationsSection {
-    background-color: #f3f6fb; /* Light background for the section */
-    padding: 60px 0; /* Add padding to the section */
-  }
-  
+.accreditationsSection { 
+  background-color: #f3f6fb; 
+  padding: 60px 20px; 
+  text-align: center;
+}
+.flexContainer {
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.heading {
+  font-size: 2.5rem; 
+  font-weight: bold;
+  text-transform: uppercase;
+  background: linear-gradient(90deg, #1d1863 0%, #de1b21 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 20px;
+}
+
+.subheading {
+  font-size: 1.5rem;
+  color: black;
+  font-weight: 500;
+  text-align: center;
+  /* margin: 0 auto; */
+  max-width: 400px;
+}
+
+.img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+    .flexContainer {
+        /* flex-direction: column; */
+        text-align: center;
+    }
+
+    .subheading {
+        margin-top: 5px; 
+    }
+}
+
+@media (max-width: 480px) {
   .heading {
-    font-size: 2.5rem; /* Set font size for the heading */
-    font-weight: bold; /* Make the heading bold */
-    text-transform: uppercase; /* Uppercase text */
-    background: linear-gradient(90deg, #1d1863 0%, #de1b21 100%); /* Gradient color */
-    background-clip: text; /* Apply the gradient to the text */
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; /* Make the text color transparent to show the gradient */
+      font-size: 1.8rem;
   }
-  
+
   .subheading {
-    font-size: 1.5rem;
-    color: black;
-    font-weight: lighter;
-    text-align: left;
-    margin-left: 10px;
-    max-width: 300px;
-    font-weight: 500;
+      font-size: 1.1rem;
+      max-width: 250px;
   }
-  
-  @media (max-width: 768px) {
-    .subheading {
-      font-size: 1.2rem;
-      max-width: 200px;
-    }
-  }
-  
-  
-  
-  
+
   .img {
-    width: 100%;
-    height: auto;
-    object-fit: cover; /* Maintain aspect ratio */
-    border-radius: 10px; /* Rounded corners for images */
+      border-radius: 5px;
   }
-  
-  @media (max-width: 768px) {
-    .heading {
-      font-size: 2rem; /* Smaller font size for smaller screens */
-    }
-  
-    .subheading {
-      font-size: 1.2rem; /* Adjust subheading font size for smaller screens */
-    }
-  }
-  
+}

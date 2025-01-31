@@ -78,3 +78,37 @@
   transform: translate(-50%, -0%);
 }
 
+@media (max-width: 768px) {
+  .heading h3 {
+    font-size: 1.8rem; 
+    padding-top: 50px; 
+  }
+  .heading .subtext{
+    font-size: 1rem;
+    
+  }
+
+  .student_friendly {
+    padding: 30px; /* Adjust padding for mobile */
+  }
+
+  .friendly_box {
+    width: 90%;  /* Increase width of friendly box on mobile */
+    margin-top: 40px;  /* Reduced margin-top on mobile */
+  }
+
+  
+}
+
+@media (max-width: 480px) {
+  .heading h3 {
+    font-size: 1.5rem; /* Even smaller font size for very small screens */
+  }
+
+  .friendly_box {
+    width: 95%;  /* Nearly full width for very small screens */
+    margin-top: 60px;
+  }
+
+  
+}

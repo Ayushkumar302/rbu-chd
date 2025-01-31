@@ -1,83 +1,182 @@
 import styles from './PossibilitySection.module.css';
+import Image from 'next/image';
 
 const PossibilitySection = () => {
   return (
-    <section className={`container-fluid ${styles.possibilitySection}`}>
-      <div className="container text-center">
-        <h2 className={styles.heading}>
-          Endless Opportunities Across Diverse Disciplines
-        </h2>
-        <p className={styles.description}>
-          Rayat Bahra University Punjab has been recognized by the UGC under sections 2(f) and 12 (B) of the UGC Act, 1956, and by other bodies of the State and the Nation. The University has also been accredited with the prestigious “A++ Grade”.
-        </p>
+    <section className={styles.possibility_sec} id="possibility_sec">
+      <div className="container">
+        <div className="sfdg">
+          <div className="row align-items-center">
+            <div className="col-md-12 text-center">
+              <h3 className={`${styles.heading} mt-0`}>
+                Endless Opportunities Across Diverse Disciplines
+              </h3>
+            </div>
+            <div className="col-md-12 text-center">
+              <p>
+                Rayat Bahra University Punjab has been recognized by the UGC under sections 2(f) and 12 (B) of the UGC Act, 1956, and by other bodies of the State and the Nation. The University has also been accredited with the prestigious “A++ Grade”
+              </p>
+            </div>
+          </div>
+        </div>
 
-        {/* Gallery Section */}
-        <div className="row justify-content-center mt-5">
-          {/* Column 1 */}
-          <div className={`${styles.column1} col-md-4 col-lg-3 mb-3`}>
-            <img
-              src="https://rbuchd.in/wp-content/uploads/2024/12/Mask-group-21.png"
-              className={`${styles.squareImg} w-100 shadow-1-strong rounded mb-3`}
-              alt="Boat on Calm Water"
-            />
-            <img
-              src="https://rbuchd.in/wp-content/uploads/2024/12/Mask-group-20.png"
-              className={`${styles.verticalImg} w-100 shadow-1-strong rounded mb-3`}
-              alt="Wintry Mountain Landscape"
-            />
-            <img
-              src="https://rbuchd.in/wp-content/uploads/2024/12/Mask-group-16-1.png"
-              className={`${styles.horizontalImg} w-100 shadow-1-strong rounded mb-3`}
-              alt="Mountains in the Clouds"
-            />
+        <div className={styles.possib_gallery}>
+          <div className="row">
+            <div className="col-md-2 padding-5 mt-0" style={{ padding: '5px' }}>
+              <div className={styles.posible_box}>
+                <Image
+                  src="/posible_1.png"
+                  alt="Image 1"
+                  width={300} 
+                  height={900} 
+                  layout="responsive"
+                  objectFit="cover"
+                  className={styles.bigImg}
+                />
+                <h4></h4>
+              </div>
+            </div>
+            <div className="col-md-10 padding-5">
+              <div className="row">
+                <div className="col-md-3 padding-5" style={{ padding: '5px' }}>
+                  <div className={styles.posible_box}>
+                    <Image
+                      src="/posible_2.png"
+                      alt="Image 2"
+                      width={300} 
+                      height={240} 
+                      layout="responsive"
+                      objectFit="cover"
+                      className={styles.imgSmal}
+                    />
+                    <h4></h4>
+                  </div>
+                </div>
+                <div className="col-md-6 padding-5" style={{ padding: '5px' }}>
+                  <div className={styles.posible_box}>
+                    <Image
+                      src="/posible_3.png"
+                      alt="Image 3"
+                      width={600} 
+                      height={240} 
+                      layout="responsive"
+                      objectFit="cover"
+                      className={styles.imgSmal}
+                    />
+                    <h4></h4>
+                  </div>
+                </div>
+                <div className="col-md-3 padding-5" style={{ padding: '5px' }}>
+                  <div className={styles.posible_box}>
+                    <Image
+                      src="/posible_4.png"
+                      alt="Image 4"
+                      width={300} 
+                      height={240} 
+                      layout="responsive"
+                      objectFit="cover"
+                      className={styles.imgSmal}
+                    />
+                    <h4></h4>
+                  </div>
+                </div>
+              </div>
+
+              <div className="row">
+                <div className="col-md-9 padding-5" style={{ padding: '5px' }}>
+                  <div className={styles.posible_box}>
+                    <Image
+                      src="/posible_5.png"
+                      alt="Image 5"
+                      width={900} 
+                      height={240} 
+                      layout="responsive"
+                      objectFit="cover"
+                      className={styles.imgSmal}
+                    />
+                    <h4></h4>
+                  </div>
+                </div>
+                <div className="col-md-3 padding-5" style={{ padding: '5px' }}>
+                  <div className={styles.posible_box}>
+                    <Image
+                      src="/posible_6.png"
+                      alt="Image 6"
+                      width={300} 
+                      height={240} 
+                      layout="responsive"
+                      objectFit="cover"
+                      className={styles.imgSmal}
+                    />
+                    <h4></h4>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
 
-          {/* Column 2 */}
-          <div className={`${styles.column2} col-md-4 col-lg-3 mb-3`}>
-            <img
-              src="https://rbuchd.in/wp-content/uploads/2024/12/Mask-group-18.png"
-              className={`${styles.verticalImg} w-100 shadow-1-strong rounded mb-3`}
-              alt="Boat on Calm Water"
-            />
-            <img
-              src="https://rbuchd.in/wp-content/uploads/2024/12/Mask-group-24.png"
-              className={`${styles.squareImg} w-100 shadow-1-strong rounded mb-3`}
-              alt="Mountains in the Clouds"
-            />
-            <img
-              src="https://rbuchd.in/wp-content/uploads/2024/12/Mask-group-17.png"
-              className={`${styles.horizontalImg} w-100 shadow-1-strong rounded mb-3`}
-              alt="Mountains in the Clouds"
-            />
-            {/* <img
-              src="https://rbuchd.in/wp-content/uploads/2024/12/Mask-group-23.png"
-              className={`${styles.squareImg} w-100 shadow-1-strong rounded mb-3`}
-              alt="Mountains in the Clouds"
-            /> */}
-          </div>
-
-          {/* Column 3 */}
-          <div className={`${styles.column3} col-md-4 col-lg-3 mb-3`}>
-            <img
-              src="https://rbuchd.in/wp-content/uploads/2024/12/Mask-group-19.png"
-              className={`${styles.squareImg} w-100 shadow-1-strong rounded mb-3`}
-              alt="Waves at Sea"
-            />
-            <img
-              src="https://rbuchd.in/wp-content/uploads/2024/12/Mask-group-22.png"
-              className={`${styles.verticalImg} w-100 shadow-1-strong rounded mb-3`}
-              alt="Yosemite National Park"
-            />
-            <img
-              src="https://rbuchd.in/wp-content/uploads/2024/12/Mask-group-25.png"
-              className={`${styles.horizontalImg} w-100 shadow-1-strong rounded mb-3`}
-              alt="Yosemite National Park"
-            />
-            {/* <img
-              src="https://rbuchd.in/wp-content/uploads/2024/12/Mask-group-22.png"
-              className={`${styles.verticalImg} w-100 shadow-1-strong rounded mb-3`}
-              alt="Yosemite National Park"
-            /> */}
+          <div className="row">
+            <div className="col-md-2">
+              <div className={styles.posible_box2}>
+                <Image
+                  src="/posible_7.png"
+                  alt="Image 7"
+                  width={300} 
+                  height={350} 
+                  layout="responsive"
+                  objectFit='cover'
+                  className={styles.imgSmal_7}
+                  
+                />
+                <h4></h4>
+              </div>
+            </div>
+            <div className="col-md-10 padding-5 pt-0" style={{ padding: '5px' }}>
+              <div className="row">
+                <div className="col-md-6 padding-5 pt-0" style={{ padding: '5px' }}>
+                  <div className={styles.posible_box}>
+                    <Image
+                      src="/posible_8.png"
+                      alt="Image 8"
+                      width={600} 
+                      height={240} 
+                      layout="responsive"
+                      objectFit="cover"
+                      className={styles.imgSmal}
+                    />
+                    <h4></h4>
+                  </div>
+                </div>
+                <div className="col-md-3 padding-5 pt-0" style={{ padding: '5px' }}>
+                  <div className={styles.posible_box}>
+                    <Image
+                      src="/posible_9.png"
+                      alt="Image 9"
+                      width={300} 
+                      height={240} 
+                      layout="responsive"
+                      objectFit="cover"
+                      className={styles.imgSmal}
+                    />
+                    <h4></h4>
+                  </div>
+                </div>
+                <div className="col-md-3 padding-5 pt-0" style={{ padding: '5px' }}>
+                  <div className={styles.posible_box}>
+                    <Image
+                      src="/posible_10.png"
+                      alt="Image 10"
+                      width={300} 
+                      height={240} 
+                      layout="responsive"
+                      objectFit="cover"
+                      className={styles.imgSmal}
+                    />
+                    <h4></h4>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>

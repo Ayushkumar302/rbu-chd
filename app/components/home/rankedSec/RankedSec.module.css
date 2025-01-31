@@ -1,3 +1,4 @@
+
 .cardContent {
   background-color: #F3F6FB; 
   transition: background-color 0.3s ease, color 0.3s ease;
@@ -7,6 +8,8 @@
   margin-right: 9px;
   margin-top: 50px;
   margin-bottom: 50px;
+  max-height: 350px; /* Added max-height to handle overflow */
+  overflow: auto; /* Ensure content doesn't overflow */
 }
 
 .cardContent:hover {
@@ -14,29 +17,71 @@
   color: #ffffff; 
 }
 
+.cardContent:hover .heading {
+  color: #ffffff;  /* Ensure the heading changes to white on hover */
+}
+
 .heading {
   color: #091e5f;
 }
+
 .heading .rank {
   font-weight: 900;
 }
+
 .cardRanked {
   font-size: 18px;
   font-weight: 400;
 }
+
 .cardRanked:hover {
   color: white;
-}
-.heading:hover {
-  color: white;
-  transition: color 0.3s ease;
 }
 
 .text {
   font-size: 1.1rem;
-  transition: color 0.3s ease;
 }
 
+/* Mobile View adjustments */
+@media (max-width: 768px) {
+ 
+  .cardContent {
+    max-height: none; /* Allow content to expand fully */
+    padding: 15px; /* Adjust padding for mobile */
+    margin-top: 20px; /* Reduce top margin */
+    margin-bottom: 20px; /* Reduce bottom margin */
+  }
 
+  .heading {
+    font-size: 1.5rem; /* Adjust heading size */
+  }
 
+  .cardRanked {
+    font-size: 16px; /* Adjust ranked text size */
+  }
 
+  .text {
+    font-size: 1rem; /* Adjust text size */
+  }
+}
+
+@media (max-width: 480px) {
+  .cardContent {
+    max-height: none; /* Allow content to expand fully */
+    padding: 12px; /* Adjust padding for very small screens */
+    margin-top: 15px; /* Further reduce margin */
+    margin-bottom: 15px; /* Further reduce margin */
+  }
+
+  .heading {
+    font-size: 1.3rem; /* Adjust heading size for very small screens */
+  }
+
+  .cardRanked {
+    font-size: 14px; /* Adjust ranked text size for very small screens */
+  }
+
+  .text {
+    font-size: 0.9rem; /* Adjust text size for very small screens */
+  }
+}

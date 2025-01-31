@@ -1,4 +1,5 @@
 import styles from './UniqueSection.module.css';
+import Image from 'next/image';
 
 const UniqueSection = () => {
   return (
@@ -13,10 +14,13 @@ const UniqueSection = () => {
         <div className="row justify-content-center mt-5">
           <div className="col-md-6 col-lg-3 mb-4">
             <div className={`${styles.featureCard}`}>
-              <img
-                src="https://rbuchd.in/wp-content/uploads/2024/11/9.png"
+              <Image
+                src="/unique_sec_img.png"
                 alt="Innovative Teaching"
                 className={`${styles.cardImage}`}
+                width={100} 
+                height={100} 
+                layout="responsive"
               />
               <h3 className={`${styles.featureCardHeading}`}>Innovative Teaching Methods</h3>
               <p className={`${styles.featureCardText}`}>Fostering creativity through modern education.</p>
@@ -25,10 +29,13 @@ const UniqueSection = () => {
 
           <div className="col-md-6 col-lg-3 mb-4">
             <div className={`${styles.featureCard}`}>
-              <img
-                src="https://rbuchd.in/wp-content/uploads/2024/11/9.png"
+              <Image
+                src="/unique_sec_img.png"
                 alt="Innovative Teaching"
                 className={`${styles.cardImage}`}
+                width={100}
+                height={100}
+                layout="responsive"
               />
               <h3 className={`${styles.featureCardHeading}`}>Innovative Teaching Methods</h3>
               <p className={`${styles.featureCardText}`}>Fostering creativity through modern education.</p>
@@ -37,10 +44,13 @@ const UniqueSection = () => {
 
           <div className="col-md-6 col-lg-3 mb-4">
             <div className={`${styles.featureCard}`}>
-              <img
-                src="https://rbuchd.in/wp-content/uploads/2024/11/9.png"
+              <Image
+                src="/unique_sec_img.png"
                 alt="Innovative Teaching"
                 className={`${styles.cardImage}`}
+                width={100}
+                height={100}
+                layout="responsive"
               />
               <h3 className={`${styles.featureCardHeading}`}>Innovative Teaching Methods</h3>
               <p className={`${styles.featureCardText}`}>Fostering creativity through modern education.</p>
@@ -49,10 +59,13 @@ const UniqueSection = () => {
 
           <div className="col-md-6 col-lg-3 mb-4">
             <div className={`${styles.featureCard}`}>
-              <img
-                src="https://rbuchd.in/wp-content/uploads/2024/11/9.png"
+              <Image
+                src="/unique_sec_img.png"
                 alt="Innovative Teaching"
                 className={`${styles.cardImage}`}
+                width={100}
+                height={100}
+                layout="responsive"
               />
               <h3 className={`${styles.featureCardHeading}`}>Innovative Teaching Methods</h3>
               <p className={`${styles.featureCardText}`}>Fostering creativity through modern education.</p>

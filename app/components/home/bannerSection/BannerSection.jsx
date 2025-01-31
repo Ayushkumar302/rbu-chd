@@ -16,27 +16,27 @@ const BannerSection = () => {
             backgroundSize: "cover",
             backgroundPosition: "center",
           }}
-        >
+         >
           {/* Text Content */}
-          <div className="position-absolute top-50 start-0 translate-middle-y text-light ps-5">
-            <h3 className="fw-light mt-4 mb-0" style={{ fontSize: "1.2rem" }}>
+          <div className={`${styles.banner_text_content} position-absolute top-50 start-0 translate-middle-y text-light ps-5`}>
+            <h3 className="fw-light mt-4 mb-0" >
               FUELING FUTURES, <br /> EMPOWERING DREAMS
             </h3>
             <h1
               className="fw-bold d-inline mb-4"
-              style={{ fontSize: "3rem", lineHeight: "1.2" }}
+              // style={{ fontSize: "3rem", lineHeight: "1.2" }}
             >
               <span className="text-danger">INDIA’S NO. 1 </span> <br />
               PRIVATE UNIVERSITY
             </h1>
-            <p className="mb-4" style={{ fontSize: "1.1rem", width: "40%" }}>
+            <p className="mb-4" >
               460+ TIE-UPS WITH INDUSTRY & UNIVERSITIES IN 90 COUNTRIES AMPLIFY
               GLOBAL EXPOSURE & PROVIDE YOU WITH OPPORTUNITIES.
             </p>
             <a
               href="#"
               className="btn btn-danger px-4 py-2"
-              style={{ fontSize: "1rem" }}
+              
             >
               Apply Now
             </a>

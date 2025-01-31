@@ -35,7 +35,7 @@ export const RankedSec = () => {
   ];
 
   return (
-    <div className="container">
+    <section className={`${styles.ranked_sec} container`}>
       <div className="d-none d-md-flex flex-wrap justify-content-center">
         {cards.map((card, index) => (
           <div
@@ -45,6 +45,8 @@ export const RankedSec = () => {
           >
             <h1 className={`${styles.heading} display-4`}>
               {card.rank}<sup>{card.supp}</sup>
+            <p className={`${styles.cardRanked} mt-1`}>Ranked</p>
+
             </h1>
             <h5
               className={`${styles.source} mt-3 fw-bold`}
@@ -60,13 +62,12 @@ export const RankedSec = () => {
             <p className={`${styles.text} mt-2`} style={{ wordWrap: 'break-word' }}>
               {card.text}
             </p>
-            <p className={`${styles.cardRanked} mt-1`}>Ranked</p>
           </div>
         ))}
       </div>
 
       {/* Bootstrap 5 Carousel for mobile */}
-      <div id="mobileCarousel" className="carousel carousel-dark slide d-md-none" data-bs-ride="carousel">
+      <div id="mobileCarousel" className="carousel carousel-dark slide d-md-none" data-bs-ride="carousel" >
         <div className="carousel-inner">
           {cards.map((card, index) => (
             <div
@@ -75,10 +76,12 @@ export const RankedSec = () => {
             >
               <div
                 className={`${styles.cardContent} text-center rounded mx-auto`}
-                style={{ width: '250px' }}
+                style={{ width: '250px' , height: '200px' }}
               >
                 <h1 className={`${styles.heading} display-4`}>
                   {card.rank}<sup>{card.supp}</sup>
+                <p className={`${styles.cardRanked} mt-1`}>Ranked</p>
+
                 </h1>
                 <h5
                   className={`${styles.source} mt-3 fw-bold`}
@@ -94,7 +97,6 @@ export const RankedSec = () => {
                 <p className={`${styles.text} mt-2`} style={{ wordWrap: 'break-word' }}>
                   {card.text}
                 </p>
-                <p className={`${styles.cardRanked} mt-1`}>Ranked</p>
               </div>
             </div>
           ))}
@@ -120,6 +122,6 @@ export const RankedSec = () => {
           <span className="visually-hidden">Next</span>
         </button>
       </div>
-    </div>
+    </section>
   );
 };

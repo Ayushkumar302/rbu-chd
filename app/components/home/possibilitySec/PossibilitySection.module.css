@@ -1,80 +1,135 @@
-.possibilitySection {
-    background: linear-gradient(to top, #fff, #f3f6fb); /* Section background gradient */
-    padding: 60px 0; /* Adjust padding */
+.possibility_sec {
+  background: linear-gradient(to top, #fff, #f3f6fb);
+  padding: 70px 0;
+}
+
+.possibility_sec h3 {
+  font-size: 2.5rem;
+  line-height: 1.2;
+  font-weight: 800;
+  text-transform: uppercase;
+  background: linear-gradient(90deg, #1d1863 0%, #de1b21 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 20px;
+}
+
+.possibility_sec p {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #555;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.container {
+  max-width: 1140px;
+}
+
+.row {
+  gap: 10px;
+}
+
+.possib_gallery {
+  margin-top: 50px;
+}
+
+.posible_box {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+}
+.posible_box2 {
+  position: relative;
+  width: 100%;
+  height: 90%;
+  border-radius: 15px;
+}
+
+.padding-5 {
+  padding: 8px;
+}
+
+.posible_box .imgSmal {
+  height: 240px;
+}
+.posible_box2 .imgSmal_7{
+  height:100% !important;
+  /* width: 100% !important; */
+  object-fit: cover;
+  border-radius: 10px;
+}
+.posible_box .bigImg {
+  height: 97% !important;
+  object-fit: cover;
+  border-radius: 10px;
+} 
+
+/* Mobile and Tablet Responsiveness */
+@media (max-width: 992px) {
+  .possibility_sec h3 {
+    font-size: 2rem;
   }
-  
-  .heading {
-    font-size: 2.5rem;
-    line-height: 1.2;
-    font-weight: 800;
-    text-transform: uppercase;
-    background: linear-gradient(90deg, #1d1863 0%, #de1b21 100%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    margin-bottom: 20px;
+  .possibility_sec p {
+    font-size: 0.9rem;
   }
-  
-  .description {
-    font-size: 1rem;
-    line-height: 1.5;
-    color: #555;
-    max-width: 800px; /* Restrict width */
-    margin: 0 auto; /* Center the text */
+
+  .posible_box .bigImg {
+    height: 400px;
   }
-  
-  .container {
-    max-width: 1140px; /* Limit the container width */
+}
+
+@media (max-width: 768px) {
+  .possibility_sec {
+    padding: 40px 20px;
   }
-  
+
+  .possibility_sec h3 {
+    font-size: 1.8rem;
+  }
+
+  .possibility_sec p {
+    font-size: 0.85rem;
+  }
+
   .row {
-    gap: 10px; /* Add spacing between columns */
+    gap: 5px;
+  }
+
+  .posible_box .bigImg {
+    height: 300px;
+  }
+
+  .posible_box .imgSmal {
+    height: 180px;
   }
   
-  /* Column-specific Classes */
-  .column1, .column2, .column3 {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 100%; /* Ensure the columns take up the full height */
+
+  .padding-5 {
+    padding: 4px;
   }
-  
-  /* Image Types */
-  
-  /* Square images */
-  .squareImg {
-    height: 250px; /* Set fixed height for square */
-    object-fit: cover; /* Ensure aspect ratio is maintained */
+}
+
+@media (max-width: 576px) {
+  .possibility_sec h3 {
+    font-size: 1.5rem;
   }
-  
-  /* Vertical images (taller images) */
-  .verticalImg {
-    height: 400px; /* Set height to be larger for vertical images */
-    object-fit: cover; /* Ensure aspect ratio is maintained */
+
+  .possibility_sec p {
+    font-size: 0.8rem;
   }
-  
-  /* Horizontal images (wider images) */
-  .horizontalImg {
-    height: 200px; /* Set height to be smaller for horizontal images */
-    object-fit: cover; /* Ensure aspect ratio is maintained */
+
+  .posible_box .bigImg {
+    height: 250px;
   }
-  
-  /* Image Layout Styling */
-  .img {
-    width: 100%;
-    margin-bottom: 10px; /* Adjust spacing between images */
+
+  .posible_box .imgSmal {
+    height: 150px;
   }
-  
-  /* Responsive Column Width */
-  @media (max-width: 768px) {
-    .col-md-4 {
-      flex: 0 0 50%; /* Make columns smaller on smaller screens */
-    }
+
+  .padding-5 {
+    padding: 2px;
   }
-  
-  @media (max-width: 576px) {
-    .col-md-4 {
-      flex: 0 0 100%; /* Stack columns vertically on very small screens */
-    }
-  }
-  
+}

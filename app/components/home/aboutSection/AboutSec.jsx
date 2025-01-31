@@ -1,4 +1,5 @@
 import styles from './AboutSec.module.css'
+import Image from 'next/image'
 
 const AboutSec = () => {
   return (
@@ -19,13 +20,17 @@ const AboutSec = () => {
         <div className="col-md-6 d-flex">
 
         <div className="d-flex flex-row justify-content-between w-100">
-            <img 
-            src="https://rbuchd.in/wp-content/uploads/2024/12/WK4G1552-1.png" 
+            <Image 
+            src="/about_1.png" 
+            width={800}
+            height={500}
             alt="First Image" 
             className={`img-fluid ${styles.image1}`} 
             />
-            <img 
-            src="https://rbuchd.in/wp-content/uploads/2024/12/WK4G1551-1.png" 
+            <Image 
+            src="/about_2.png" 
+            width={300}
+            height={500}
             alt="Second Image" 
             className={`img-fluid ${styles.image2}`} 
             />
@@ -37,7 +42,13 @@ const AboutSec = () => {
       {/* Notice Section */}
       <div className={`${styles.notice} d-flex  align-items-center mt-4`}>
         <div className={styles.icon}>
-          <i className="fas fa-info-circle"></i>
+          {/* <i className="fas fa-info-circle"></i> */}
+          <Image 
+            src="/about_3.png" 
+            width={30}
+            height={30}
+            alt="Second Image" 
+            />
         </div>
         <div className={styles.notice_title}>
             Notice 2025  
